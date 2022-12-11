@@ -152,16 +152,11 @@ public class enemyHealth : MonoBehaviour
         if (hasIdle)
         {
             float idleVolume = idle.volume;
-            yield return new WaitForSeconds(timeToDisappear/5);
-            idle.volume = idleVolume * 4 / 5;
-            yield return new WaitForSeconds(timeToDisappear / 5);
-            idle.volume = idleVolume * 3 / 5;
-            yield return new WaitForSeconds(timeToDisappear / 5);
-            idle.volume = idleVolume * 2 / 5;
-            yield return new WaitForSeconds(timeToDisappear / 5);
-            idle.volume = idleVolume * 1 / 5;
-            yield return new WaitForSeconds(timeToDisappear / 5);
-            idle.volume = idleVolume * 0 / 5;
+            for(int i = 4; i <= 0; i-=1){
+                yield return new WaitForSeconds(timeToDisappear/5);
+                idle.volume = idleVolume * i / 5;
+            }
+           
         }
         else
         {
