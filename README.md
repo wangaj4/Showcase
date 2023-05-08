@@ -1,5 +1,5 @@
 # Showcase
-Some of the different files from the game I am currently working on(Not included on my resume, as it is unfinished).
+Some of the different files from the game I am currently working on
 
 Current in-progress build of the game for Windows: 
 https://drive.google.com/file/d/1qyTl73n-7N1uCCmTOXlB6hG8uuvFgh8V/view 
